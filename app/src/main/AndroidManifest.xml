@@ -22,7 +22,8 @@
         <activity
                 android:name=".OneActivity"
                 android:parentActivityName=".MainActivity"
-                tools:targetApi="jelly_bean">
+                tools:targetApi="jelly_bean"
+                android:launchMode="standard">
             <meta-data
                     android:name="android.support.PARENT_ACTIVITY"
                     android:value=".MainActivity"/>

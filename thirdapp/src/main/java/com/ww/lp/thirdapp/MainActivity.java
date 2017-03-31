@@ -30,6 +30,8 @@ public class MainActivity extends AppCompatActivity {
                 String uri = "navigationdemo://";
                 try {
                     Intent intent = Intent.parseUri(uri, Intent.URI_INTENT_SCHEME);
+                    intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+//                  效果形同被唤起app的activity设置launchmode=singleTask
                     startActivity(intent);
                 } catch (URISyntaxException e) {
                     e.printStackTrace();
