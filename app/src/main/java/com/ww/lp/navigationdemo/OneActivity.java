@@ -23,6 +23,9 @@ public class OneActivity extends AppCompatActivity {
         Log.i(TAG, "onOptionsItemSelected: ");
         switch (item.getItemId()) {
             case android.R.id.home:
+//                Intent upIntent = new Intent(this, MainActivity.class);
+//                upIntent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+//                NavUtils.navigateUpTo(this, upIntent);
                 NavUtils.navigateUpFromSameTask(this);
                 return true;
         }
