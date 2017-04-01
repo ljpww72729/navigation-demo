@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Log.i(TAG, "bntOne onClick: ");
                 Intent intent = new Intent(MainActivity.this, OneActivity.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 startActivity(intent);
             }
         });

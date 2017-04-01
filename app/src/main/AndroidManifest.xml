@@ -9,7 +9,8 @@
             android:label="@string/app_name"
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
-            android:theme="@style/AppTheme">
+            android:theme="@style/AppTheme"
+            android:allowTaskReparenting="true">
         <activity
                 android:name=".MainActivity"
                 android:launchMode="singleTop">
@@ -23,7 +24,8 @@
                 android:name=".OneActivity"
                 android:parentActivityName=".MainActivity"
                 tools:targetApi="jelly_bean"
-                android:launchMode="standard">
+                android:launchMode="standard"
+                android:taskAffinity=".two">
             <meta-data
                     android:name="android.support.PARENT_ACTIVITY"
                     android:value=".MainActivity"/>
